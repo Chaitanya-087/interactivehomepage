@@ -1,0 +1,18 @@
+@import './variables.scss';
+@import '../components/navbar.module.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $Epilogue;
+    width: 100%;
+    font-size: 100%;
+}
+
+#root{
+    height: 100%;
+}
