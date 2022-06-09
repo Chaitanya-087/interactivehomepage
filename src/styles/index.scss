@@ -5,11 +5,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+*:focus{
+    outline: none;
 }
 
 body{
     font-family: $Epilogue;
     width: 100%;
+    min-height: 100vh;
     font-size: 100%;
 }
 
