@@ -18,7 +18,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <header className='navbar'>
-      <h1 className='logo'>span</h1>
+      <h2 className='logo'>span</h2>
       {isMobile ?
         <>
           <div className='side-navigation'>
