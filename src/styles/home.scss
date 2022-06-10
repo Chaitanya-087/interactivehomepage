@@ -1,0 +1,105 @@
+@import '../styles/variables.scss';
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .first-page{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .content-box{
+            display: flex;
+            gap:2.5rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            .title{
+                font-size: 70px;
+            }
+            .content-text{
+                font-size: 14px;
+                line-height: 1.5;
+                color: $gray;
+                padding-inline-end: 24vw;
+            }
+            .btn-learnmore{
+                width: 120px;
+                background-color: $black;
+                color: #ffffff;
+                padding: 14px 14px;
+                border-radius: 10px;
+                transition: 100ms;
+                font-weight:600;
+                letter-spacing: 1px;
+                margin-bottom: 5rem;
+                &:hover{
+                    color: $black;
+                    outline:2px solid $black;
+                    background-color: transparent;
+                }
+            }
+            .products{
+                display: flex;
+                gap: 2rem;
+                li{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .hero{ 
+           width:100%;
+           height: 100%;
+           object-fit: contain;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@include breakpoint(md){
+    
+.container{
+    align-items: flex-start;
+    .first-page{
+        width: 100%;
+        grid-template-columns: 1fr;
+        .content-box{
+            text-align: center;
+            gap: 1rem;
+            .title{
+                font-size: 35px;
+            }
+            .content-text{
+                padding-inline:1rem;
+            }
+            .btn-learnmore{
+                align-self: center;
+                margin-bottom: 1rem;
+            }
+            .products{
+                align-self: center;
+                padding-inline: 1rem;
+            }
+        }
+    
+        .hero{
+            width: inherit;
+            grid-row: 1/2;
+            margin-bottom: 2.5rem;
+
+        }
+    }
+    }
+
+}

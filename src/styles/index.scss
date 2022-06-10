@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import '../components/navbar.module.scss';
+@import '../components/sidebar.module.scss';
 
 *{
     box-sizing: border-box;
@@ -14,11 +15,21 @@
 
 body{
     font-family: $Epilogue;
-    width: 100%;
     min-height: 100vh;
     font-size: 100%;
 }
 
+button:focus{
+    outline: none;
+}
+button{
+    background: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
 #root{
-    height: 100%;
+    min-height: inherit;
 }
