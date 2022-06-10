@@ -20,8 +20,8 @@ const SideBar = () => {
             </button>
             <nav>
                 <ul className='side-navigation-list'>
-                    <li className='navigation-item' onClick={() => setFeatureArrow(~featureArrowPos + 2)}>
-                        <span>feature</span>
+                    <li className='navigation-item'>
+                        <span onClick={() => setFeatureArrow(~featureArrowPos + 2)}>feature</span>
                         <img src={arrow[featureArrowPos]} alt="arrow-posed" style={{ marginLeft: 0.5 + 'rem' }} />
                         <ul className='collapse-list' data-rollout={featureArrowPos}>
                             <li>
@@ -42,8 +42,8 @@ const SideBar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li className='navigation-item' onClick={() => setcompanyArrow(~companyArrowPos + 2)}>
-                        <span>company</span>
+                    <li className='navigation-item'>
+                        <span onClick={() => setcompanyArrow(~companyArrowPos + 2)}>company</span>
                         <img src={arrow[companyArrowPos]} alt="arrow-posed" style={{ marginLeft: 0.5 + 'rem' }} />
                         <ul className='collapse-list' data-rollout={companyArrowPos}>
                             <li>

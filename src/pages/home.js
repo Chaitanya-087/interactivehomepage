@@ -24,7 +24,7 @@ const Home = () => {
             watch productivity soar.
           </p>
           <button className='btn-learnmore'>
-            Learn more
+            Learn&nbsp;more
           </button>
           <ul className='products'>
               <li><img src={Databiz} alt="" /></li>
