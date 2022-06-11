@@ -31,29 +31,28 @@
 
             .collapse-list {
                 position: absolute;
-                top: 30px;
+                top: calc(100% + .5rem);
                 background-color: #fff;
                 padding: 1.25rem;
                 border-radius:8px;
                 display: flex;
                 flex-direction: column;
                 gap: 0.75rem;
-                transform: rotateX(90deg);
                 opacity: 0;
-                transition: 300ms;
-                transform-origin: top;
+                transform: translateY(-15px);
+                transition: opacity 150ms , transform 150ms;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 li {
+                    display: flex;
+                    align-items: center;
                     img{
                         margin-right: 1rem;
                     }
-                    display: flex;
-                    align-items: center;
                 }
             }
             .collapse-list[data-rollout='1']{
-                transform: rotateX(0);
+                transform: translateY(0);
                 opacity: 1;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
 
         }
